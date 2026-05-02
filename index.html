@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Retail Candy 🍬</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { height: 100%; }
+    body {
+      background: #0F0F1A;
+      display: flex;
+      justify-content: center;
+      min-height: 100%;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    #root {
+      width: 100%;
+      max-width: 390px;
+      min-height: 100vh;
+      height: 100vh;
+      background: #FAFAF8;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    ::-webkit-scrollbar { display: none; }
+    * { scrollbar-width: none; -ms-overflow-style: none; }
+    input, textarea, button, select { font-family: 'Inter', sans-serif; outline: none; border: none; background: none; }
+    * { -webkit-tap-highlight-color: transparent; }
+    input, textarea { user-select: text; -webkit-user-select: text; }
+    @media (max-width: 390px) {
+      body { background: #FAFAF8; }
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel" data-presets="react" src="js/shared.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/mock-data.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/components.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/screens-recovery.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/screens-autopilot.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/screens-advisor.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/screens-inventory.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/screens-customers.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/screens-secondary.jsx"></script>
+  <script type="text/babel" data-presets="react" src="js/app-shell.jsx"></script>
+</body>
+</html>
